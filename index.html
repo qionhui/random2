@@ -77,10 +77,10 @@
                         var text = na[Math.floor(Math.random()*na.length)];
                         if(text != 32){
                             $("s").html(text);
-                            $("span").html("32号拿外卖" );
+                            $("#s").html("32号拿外卖" );
                         }
                         else
-                        $("span").html( text +"号拿外卖" );
+                        $("#s").html( text +"号拿外卖" );
                     }
 
                     if(butto.html() == "我要..." || butto.html() == "不,换一家QvQ"){
@@ -106,7 +106,7 @@
         <div id="head">
             <span class="cc">我就是从这跳下去</span><br />
             <span class="cc">也不会吃你一点东西</span><br />
-            <span class="ccc">那么<s></s><span></span></span>
+            <span class="ccc">那么<s></s><span id="s"></span></span>
             <p>吃什么呢?</p>
         </div>
         <button>我要...</button>
